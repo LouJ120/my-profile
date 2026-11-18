@@ -1,0 +1,268 @@
+/* ===== Base ===== */
+body {
+    background-color: #5c94fc;   /* deep arcade purple */
+    color: #1a1a1a;
+    font-family: "Pixelify Sans", Verdana, Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Press Start 2P", "Courier New", Courier, monospace;
+    color: #c8201c;              /* neon green */
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #c8201c;   /* near-black */
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 0.3rem solid #fbd000;  /* neon magenta */
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0 0 0.75rem;
+}
+
+header p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* ===== Main content ===== */
+main {
+    max-width: 56rem;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background-color: #fff4d6;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 0.2rem solid #1a1a1a;         /* cyan */
+    border-radius: 0;
+    box-shadow: 0.4rem 0.4rem 0 #c84c0c;  /* hard pixel-style shadow */
+}
+
+h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+    color: #1e4fc2;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 0.7rem;
+    color: #1e4fc2;
+    margin: 0.75rem 0 0.5rem;
+}
+
+/* ===== About Me: photo beside bio (Flexbox) ===== */
+.bio {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.photo-placeholder {
+    flex: 0 0 9rem;
+    height: 9rem;
+    border: 0.2rem solid #c8201c;
+    border-radius: 0;
+    background-color: #ffffff;
+    color: #c8201c;
+    font-family: "Press Start 2P", "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h2 {
+    margin-bottom: 0.75rem;
+}
+
+.bio-text p {
+    margin: 0;
+    max-width: 65ch;
+}
+
+/* ===== Things I Love: chips ===== */
+.chips {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.chips li {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 0.2rem solid #00a800;
+    border-radius: 0;
+    padding: 0.4rem 1rem;
+}
+
+/* ===== Passion Projects ===== */
+.featured {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.featured img {
+    flex: 1 1 50%;
+    min-width: 0;
+    max-width: 50%;
+    height: auto;
+    border: 0.2rem solid #1a1a1a;
+}
+
+.featured .card {
+    flex: 1 1 50%;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 0.2rem solid #00a800;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.card p {
+    margin: 0 0 0.5rem;
+}
+
+.other-title {
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-list .card {
+    flex: 1 1 13rem;
+    text-align: left;
+}
+
+.project-list img {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    background-color: #cfe0ff;
+    display: block;
+}
+
+.date {
+    color: #c8201c;
+    font-size: 1rem;
+}
+
+/* ===== Links ===== */
+a {
+    color: #1e4fc2;
+}
+
+a:hover {
+    color: #c8201c;
+    text-decoration: none;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #7a3b0c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 0.3rem solid #00a800;
+}
+
+footer h2 {
+    color: #fbd000;
+    margin-bottom: 0.75rem;
+}
+
+footer p {
+    margin: 0 0 0.5rem;
+}
+
+footer a {
+    color: #fbd000;
+}
+
+/* ===== Mobile layout ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.1rem;
+    }
+
+    main {
+        margin: 1rem auto;
+        padding: 0 0.75rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .bio {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .photo-placeholder {
+        flex: 0 0 auto;
+        width: 9rem;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    .featured img {
+        max-width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .chips {
+        justify-content: center;
+    }
+}

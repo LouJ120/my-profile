@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+
+  <project>
+    <title>Personal Leisure Illustrations</title>
+    <description>A set of digital illustrations I made for fun, including a McDonald's Valentine's poster, a colorful painted abstract piece, and a Batman and Iron Man fan art with gifts.</description>
+    <date>2020-12-13</date>
+    <content>
+      <artwork medium="Digital" theme="Valentine's promo">
+        <title>You're the Ketchup to My Fries</title>
+        <description>A McDonald's Valentine's poster with fries, ketchup, and a heart.</description>
+      </artwork>
+      <artwork medium="Digital" theme="Abstract">
+        <title>Colorful Painted Abstract</title>
+        <description>A bright abstract piece in yellow, blue, green, and orange strokes.</description>
+      </artwork>
+      <artwork medium="Digital" theme="Fan art">
+        <title>Batman and Iron Man with Gifts</title>
+        <description>Fan art of Batman and Iron Man exchanging gifts against a snowy yellow background.</description>
+      </artwork>
+    </content>
+  </project>
+
+  <project>
+    <title>Pandesal Baking Video</title>
+    <description>A video where I bake pandesal and walk through the whole process from start to finish, showing each ingredient, the tools I use, and why accurate measuring matters for a good result.</description>
+    <date>2026-07-27</date>
+    <content>
+      <video subject="Pandesal">
+        <title>Pandesal Baking Walkthrough</title>
+        <description>A full start-to-finish baking tutorial, hosted on my Google Sites portfolio under Highlighted Projects.</description>
+      </video>
+      <focus>Ingredients and baking tools</focus>
+      <focus>Accurate measuring</focus>
+    </content>
+  </project>
+
+  <project>
+    <title>Cyberpunk Mood Board</title>
+    <description>A mood board for MMS 170 on a chosen style, the Cyberpunk aesthetic, combining games, anime, and film references like Night City, Edgerunners, Blade Runner 2049, and Ghost in the Shell.</description>
+    <date>2026-08-16</date>
+    <content>
+      <reference type="Video game">Night City</reference>
+      <reference type="Anime">Cyberpunk: Edgerunners</reference>
+      <reference type="Film">Blade Runner 2049</reference>
+      <reference type="Anime and film">Ghost in the Shell</reference>
+    </content>
+  </project>
+
+</projects>
